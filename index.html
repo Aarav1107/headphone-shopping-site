@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHONO - High-end minimalist black and white audiophile headphones crafted for precision sound and timeless aesthetics. Project by Aarav.">
+    <meta name="author" content="Aarav (Aarav1107)">
+    <title>PHONO // Minimalist Studio Headphones & Audio Experience</title>
+
+    <!-- Google Fonts: Inter & Space Grotesk for modern minimalist typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'><circle cx='12' cy='12' r='10' stroke='%23000000' stroke-width='2'/><path d='M8 12a4 4 0 0 1 8 0v3a2 2 0 0 1-2 2h-1v-4h2v-1a3 3 0 0 0-6 0v1h2v4H9a2 2 0 0 1-2-2v-3z' fill='%23ffffff'/></svg>">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container announcement-content">
+            <span class="announcement-badge">STUDIO DROP</span>
+            <p>Free express worldwide delivery on all studio orders &bull; Use code <strong>AARAV10</strong> for 10% off</p>
+            <span class="announcement-close" id="closeAnnouncement" aria-label="Close banner">&times;</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Wordmark -->
+            <a href="#showcase" class="brand-logo" aria-label="PHONO Homepage">
+                <span class="logo-mark"></span>
+                <span class="brand-name">PHONO</span>
+                <span class="brand-tag">BY AARAV</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#showcase" class="nav-link active">Showcase</a></li>
+                    <li><a href="#customizer" class="nav-link">Customizer</a></li>
+                    <li><a href="#acoustics" class="nav-link">Acoustics Lab</a></li>
+                    <li><a href="#catalog" class="nav-link">Collection</a></li>
+                    <li><a href="#specs" class="nav-link">Specs</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions (Theme Toggle, Sound Demo, Cart Button, Mobile Hamburger) -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="icon-btn theme-toggle" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+
+                <!-- Audio Quick Test Button -->
+                <button class="sound-quick-btn" id="quickAudioBtn" aria-label="Quick sound test">
+                    <span class="sound-wave-bars">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <span class="quick-btn-text">Test Sound</span>
+                </button>
+
+                <!-- Cart Trigger Button -->
+                <button class="cart-trigger-btn" id="openCartBtn" aria-label="View Shopping Cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span class="cart-label">Bag</span>
+                    <span class="cart-badge" id="cartCountBadge">0</span>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Hero / Showcase Section -->
+        <section id="showcase" class="hero-section">
+            <div class="container hero-grid">
+                
+                <!-- Left Hero Information -->
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="dot-live"></span>
+                        <span>SERIES 095 &bull; MASTER EDITION</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        SOUND IN ITS <br>
+                        <span class="text-outline">PUREST</span> FORM.
+                    </h1>
+
+                    <p class="hero-desc">
+                        Engineered with custom 45mm Beryllium dynamic drivers, active hybrid acoustic dampening, and bespoke CNC-machined ergonomics. Handcrafted for audiophiles, creators, and purists.
+                    </p>
+
+                    <!-- Hero Call-To-Action Group -->
+                    <div class="hero-cta-group">
+                        <button class="btn btn-primary" id="heroAddToCartBtn" data-id="phono-black" data-title="PHONO Pro Wireless — Obsidian Black" data-price="299" data-img="img/headphone-black.jpg">
+                            <span>Order Phono Pro &bull; $299</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <a href="#acoustics" class="btn btn-secondary">
+                            <span>Explore Sound Lab</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Spec Highlights -->
+                    <div class="hero-specs-row">
+                        <div class="spec-item">
+                            <span class="spec-value">40h</span>
+                            <span class="spec-label">Battery Playback</span>
+                        </div>
+                        <div class="spec-divider"></div>
+                        <div class="spec-item">
+                            <span class="spec-value">45mm</span>
+                            <span class="spec-label">Beryllium Drivers</span>
+                        </div>
+                        <div class="spec-divider"></div>
+                        <div class="spec-item">
+                            <span class="spec-value">-38dB</span>
+                            <span class="spec-label">Hybrid Noise Isolation</span>
+                        </div>
+                        <div class="spec-divider"></div>
+                        <div class="spec-item">
+                            <span class="spec-value">240g</span>
+                            <span class="spec-label">Ultralight Body</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Interactive Product Visualizer -->
+                <div class="hero-visual">
+                    <div class="product-stage">
+                        <div class="ambient-glow"></div>
+                        <div class="product-image-wrap">
+                            <img src="img/headphone-black.jpg" alt="PHONO Minimalist Over-Ear Headphones" id="heroProductImg" class="hero-product-img">
+                        </div>
+
+                        <!-- Live Interactive Finish Selector -->
+                        <div class="color-selector-card">
+                            <div class="selector-header">
+                                <span class="selector-title">Select Finish</span>
+                                <span class="selected-color-name" id="selectedColorLabel">01 // Obsidian Black</span>
+                            </div>
+                            <div class="color-swatches">
+                                <button class="swatch-btn active" data-color="Obsidian Black" data-price="299" data-img="img/headphone-black.jpg" style="--swatch-color: #0d0d0d;" aria-label="Obsidian Black finish"></button>
+                                <button class="swatch-btn" data-color="Glacier White" data-price="299" data-img="img/headphone-white.jpg" style="--swatch-color: #e5e5e5;" aria-label="Glacier White finish"></button>
+                                <button class="swatch-btn" data-color="Stealth Titanium" data-price="329" data-img="img/headphone-silver.jpg" style="--swatch-color: #71717a;" aria-label="Stealth Titanium finish"></button>
+                            </div>
+                        </div>
+
+                        <!-- Floating Feature Badges -->
+                        <div class="floating-badge badge-top-right">
+                            <span class="badge-icon">✦</span>
+                            <span class="badge-text">Lossless LDAC Codec</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-left">
+                            <span class="badge-icon">⚡</span>
+                            <span class="badge-text">15 min charge = 8h play</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Brand Philosophy / Large Typography Banner -->
+        <section class="banner-ticker-section">
+            <div class="ticker-wrapper">
+                <div class="ticker-track">
+                    <span>ZERO DISTORTION</span>
+                    <span class="ticker-star">★</span>
+                    <span>STUDIO GRADE ACOUSTICS</span>
+                    <span class="ticker-star">★</span>
+                    <span>MINIMALIST ARCHITECTURE</span>
+                    <span class="ticker-star">★</span>
+                    <span>CRAFTED BY AARAV</span>
+                    <span class="ticker-star">★</span>
+                    <span>PURE MONOCHROME DESIGN</span>
+                    <span class="ticker-star">★</span>
+                    <span>ACTIVE HYBRID NOISE ISOLATION</span>
+                    <span class="ticker-star">★</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Color & Customizer Studio Section -->
+        <section id="customizer" class="customizer-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-eyebrow">CUSTOMIZE YOUR PAIR</span>
+                    <h2 class="section-title">THE ARCHITECTURAL FINISHES</h2>
+                    <p class="section-desc">Designed with aircraft-grade anodized aluminum, memory foam ear cups wrapped in ventilated vegan leather, and precision-tuned acoustic chambers.</p>
+                </div>
+
+                <div class="customizer-grid">
+                    <!-- Left: Large High-Res Product Display -->
+                    <div class="customizer-display">
+                        <div class="customizer-view-badge" id="customizerViewBadge">FINISH: OBSIDIAN BLACK</div>
+                        <div class="customizer-img-box">
+                            <img src="img/headphone-black.jpg" alt="Headphone Finish Preview" id="customizerMainImg" class="customizer-img">
+                        </div>
+                        <div class="view-toggles">
+                            <button class="view-btn active" data-view="front">Studio Angle</button>
+                            <button class="view-btn" data-view="desk">Desk Stand</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Customizer Control Panel -->
+                    <div class="customizer-controls">
+                        <div class="customizer-box">
+                            <h3 class="customizer-model-name" id="customizerModelTitle">PHONO Pro // Studio Master</h3>
+                            <div class="customizer-price-row">
+                                <span class="customizer-price" id="customizerPriceTag">$299.00</span>
+                                <span class="stock-status in-stock"><span class="pulse-dot"></span> In Stock & Ready to Ship</span>
+                            </div>
+
+                            <hr class="customizer-divider">
+
+                            <div class="customizer-option-group">
+                                <label class="option-label">1. CHOOSE CHASSIS COAT</label>
+                                <div class="finish-pill-group">
+                                    <button class="finish-pill active" data-finish="black" data-name="Obsidian Black" data-price="299" data-img="img/headphone-black.jpg">
+                                        <span class="pill-dot" style="background:#111; border:1px solid #444;"></span>
+                                        <span class="pill-title">Obsidian Black</span>
+                                        <span class="pill-price">$299</span>
+                                    </button>
+                                    <button class="finish-pill" data-finish="white" data-name="Glacier White" data-price="299" data-img="img/headphone-white.jpg">
+                                        <span class="pill-dot" style="background:#f5f5f5; border:1px solid #ccc;"></span>
+                                        <span class="pill-title">Glacier White</span>
+                                        <span class="pill-price">$299</span>
+                                    </button>
+                                    <button class="finish-pill" data-finish="silver" data-name="Stealth Titanium" data-price="329" data-img="img/headphone-silver.jpg">
+                                        <span class="pill-dot" style="background:#71717a; border:1px solid #999;"></span>
+                                        <span class="pill-title">Stealth Titanium</span>
+                                        <span class="pill-price">$329</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="customizer-option-group">
+                                <label class="option-label">2. CABLE & ACCESSORY BUNDLE</label>
+                                <div class="accessory-checkboxes">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" id="addStandCheck" value="49">
+                                        <span class="checkmark"></span>
+                                        <div class="checkbox-info">
+                                            <span class="cb-title">Machined Aluminum Headphone Stand</span>
+                                            <span class="cb-desc">Solid weighted base, anti-scratch curve</span>
+                                        </div>
+                                        <span class="cb-price">+$49</span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" id="addCableCheck" value="39">
+                                        <span class="checkmark"></span>
+                                        <div class="checkbox-info">
+                                            <span class="cb-title">Silver-Plated Balanced 4.4mm OFC Cable</span>
+                                            <span class="cb-desc">Oxygen-free copper, zero signal attenuation</span>
+                                        </div>
+                                        <span class="cb-price">+$39</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="customizer-summary-box">
+                                <div class="summary-line">
+                                    <span>Configured Total:</span>
+                                    <strong class="total-price" id="configFinalTotal">$299.00</strong>
+                                </div>
+                                <button class="btn btn-primary btn-block" id="customizerAddToCartBtn">
+                                    <span>Add Custom Configuration to Bag</span>
+                                </button>
+                                <p class="guarantee-text">🔒 30-Day Studio Trial &bull; 2-Year Full Hardware Warranty &bull; Free Global Returns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Acoustics & Sound Wave Lab -->
+        <section id="acoustics" class="acoustics-section">
+            <div class="container">
+                <div class="acoustics-wrapper">
+                    <div class="section-head text-center">
+                        <span class="section-eyebrow">INTERACTIVE SOUND LAB</span>
+                        <h2 class="section-title">FREQUENCY & ACOUSTIC SIMULATOR</h2>
+                        <p class="section-desc">Experience real-time frequency synthesis and audio profile calibration. Toggle sound modes and listen to the acoustic driver emulation.</p>
+                    </div>
+
+                    <!-- Visualizer Canvas Container -->
+                    <div class="visualizer-container">
+                        <div class="visualizer-screen">
+                            <canvas id="soundCanvas" width="900" height="240"></canvas>
+                            <div class="visualizer-overlay-info">
+                                <span class="active-profile-indicator" id="activeProfileText">PROFILE: REFERENCE MASTER (FLAT)</span>
+                                <span class="frequency-indicator" id="freqIndicator">5 Hz &mdash; 45,000 Hz</span>
+                            </div>
+                        </div>
+
+                        <!-- Sound Controls -->
+                        <div class="sound-controls-bar">
+                            <div class="profile-tabs">
+                                <button class="profile-btn active" data-profile="flat" data-desc="Uncolored, surgical frequency curve for studio mastering and pristine monitoring.">
+                                    <span>01. Studio Reference</span>
+                                </button>
+                                <button class="profile-btn" data-profile="bass" data-desc="Extended sub-bass harmonic reinforcement tuned down to 10Hz with crisp vocal isolation.">
+                                    <span>02. Dynamic Sub-Bass</span>
+                                </button>
+                                <button class="profile-btn" data-profile="spatial" data-desc="Wide acoustic soundstage simulation with immersive binaural reverb depth.">
+                                    <span>03. Spatial Immersion</span>
+                                </button>
+                            </div>
+
+                            <div class="audio-toggle-wrapper">
+                                <button class="btn btn-audio-play" id="audioLabPlayBtn">
+                                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                                    <span id="audioLabBtnText">Start Sound Simulation</span>
+                                </button>
+                                <div class="volume-slider-group">
+                                    <span class="volume-icon">🔊</span>
+                                    <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.5" aria-label="Simulation volume">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-description-box" id="profileDescBox">
+                            <p><strong>Studio Reference:</strong> Uncolored, surgical frequency curve for studio mastering and pristine monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Collection / Shop Grid Section -->
+        <section id="catalog" class="catalog-section">
+            <div class="container">
+                <div class="catalog-header-row">
+                    <div>
+                        <span class="section-eyebrow">THE COLLECTION</span>
+                        <h2 class="section-title">ENGINEERED HARDWARE</h2>
+                    </div>
+
+                    <!-- Category Filter Tabs -->
+                    <div class="category-filters">
+                        <button class="cat-tab active" data-category="all">All Items</button>
+                        <button class="cat-tab" data-category="overear">Over-Ear</button>
+                        <button class="cat-tab" data-category="iem">In-Ear IEM</button>
+                        <button class="cat-tab" data-category="accessories">Accessories</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Product 1: PHONO Pro Wireless Black -->
+                    <div class="product-card" data-category="overear">
+                        <div class="product-badge">FLAGSHIP</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="PHONO Pro Wireless — Black">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-black.jpg" alt="PHONO Pro Wireless Black" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Over-Ear Wireless</span>
+                                <span class="product-rating">★ 4.9 (128)</span>
+                            </div>
+                            <h3 class="product-name">PHONO Pro Wireless — Obsidian</h3>
+                            <p class="product-brief">45mm Beryllium drivers, Hybrid ANC, 40h battery playback.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$299.00</span>
+                                <button class="btn-quick-add" data-id="phono-black" data-title="PHONO Pro Wireless — Obsidian" data-price="299" data-img="img/headphone-black.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: PHONO Glacier White -->
+                    <div class="product-card" data-category="overear">
+                        <div class="product-badge">LIMITED</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="PHONO Pro — Glacier White">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-white.jpg" alt="PHONO Pro Glacier White" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Over-Ear Studio</span>
+                                <span class="product-rating">★ 5.0 (94)</span>
+                            </div>
+                            <h3 class="product-name">PHONO Pro — Glacier White</h3>
+                            <p class="product-brief">Brushed aluminum gimbal, ultra-soft breathable white protein leather.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$299.00</span>
+                                <button class="btn-quick-add" data-id="phono-white" data-title="PHONO Pro — Glacier White" data-price="299" data-img="img/headphone-white.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: PHONO Stealth Titanium -->
+                    <div class="product-card" data-category="overear">
+                        <div class="product-badge">PRO EDITION</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="PHONO Pro — Stealth Titanium">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-silver.jpg" alt="PHONO Pro Stealth Titanium" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Over-Ear Reference</span>
+                                <span class="product-rating">★ 4.9 (82)</span>
+                            </div>
+                            <h3 class="product-name">PHONO Studio Titanium Edition</h3>
+                            <p class="product-brief">Matte titanium alloy finish, custom tuned for acoustic monitoring.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$329.00</span>
+                                <button class="btn-quick-add" data-id="phono-silver" data-title="PHONO Studio Titanium Edition" data-price="329" data-img="img/headphone-silver.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: PHONO Pure In-Ear IEM -->
+                    <div class="product-card" data-category="iem">
+                        <div class="product-badge">AUDIOPHILE</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="PHONO Pure Dual IEM">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-iem.jpg" alt="PHONO Pure In-Ear Monitor" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Dual Hybrid IEM</span>
+                                <span class="product-rating">★ 4.8 (67)</span>
+                            </div>
+                            <h3 class="product-name">PHONO Pure In-Ear IEMs</h3>
+                            <p class="product-brief">Medical-grade resin shell, balanced armature + 10mm dynamic driver.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$149.00</span>
+                                <button class="btn-quick-add" data-id="phono-iem" data-title="PHONO Pure In-Ear IEMs" data-price="149" data-img="img/headphone-iem.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Machined Headphone Stand -->
+                    <div class="product-card" data-category="accessories">
+                        <div class="product-badge">ACCESSORY</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="Machined Aluminum Headphone Stand">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-stand.jpg" alt="Machined Aluminum Headphone Stand" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Studio Desk Mount</span>
+                                <span class="product-rating">★ 5.0 (42)</span>
+                            </div>
+                            <h3 class="product-name">Machined Aluminum Desk Stand</h3>
+                            <p class="product-brief">Solid weighted cylindrical base with curved silicone cradle.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$49.00</span>
+                                <button class="btn-quick-add" data-id="phono-stand" data-title="Machined Aluminum Desk Stand" data-price="49" data-img="img/headphone-stand.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Silver-Plated OFC Cable -->
+                    <div class="product-card" data-category="accessories">
+                        <div class="product-badge">CABLE</div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist" data-title="Braided Silver OFC Cable">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                        <div class="product-img-box">
+                            <img src="img/headphone-iem.jpg" alt="Braided Silver Cable" class="product-thumb">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-meta">
+                                <span class="product-type">Interconnect Cable</span>
+                                <span class="product-rating">★ 4.9 (38)</span>
+                            </div>
+                            <h3 class="product-name">Silver-Plated Balanced Cable</h3>
+                            <p class="product-brief">8-core braided OFC wire, gold-plated 3.5mm & 4.4mm balanced jacks.</p>
+                            <div class="product-bottom-row">
+                                <span class="product-price">$39.00</span>
+                                <button class="btn-quick-add" data-id="phono-cable" data-title="Silver-Plated Balanced Cable" data-price="39" data-img="img/headphone-iem.jpg">
+                                    <span>Add to Bag</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications & Comparison -->
+        <section id="specs" class="specs-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-eyebrow">MEASURED PERFORMANCE</span>
+                    <h2 class="section-title">TECHNICAL ARCHITECTURE</h2>
+                    <p class="section-desc">Obsessive acoustic engineering quantified. Every component measured with lab-grade audio precision.</p>
+                </div>
+
+                <div class="specs-table-card">
+                    <div class="table-responsive">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Specification</th>
+                                    <th class="highlight-col">PHONO Pro Wireless</th>
+                                    <th>PHONO Pure IEM</th>
+                                    <th>Industry Standard</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Transducer Principle</strong></td>
+                                    <td class="highlight-col">45mm Beryllium Dynamic</td>
+                                    <td>10mm Dynamic + Knowles BA</td>
+                                    <td>40mm Standard Mylar</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Frequency Response</strong></td>
+                                    <td class="highlight-col"><strong>5 Hz &mdash; 45,000 Hz</strong></td>
+                                    <td>10 Hz &mdash; 35,000 Hz</td>
+                                    <td>20 Hz &mdash; 20,000 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total Harmonic Distortion (THD)</strong></td>
+                                    <td class="highlight-col">&lt; 0.05% @ 1kHz</td>
+                                    <td>&lt; 0.1% @ 1kHz</td>
+                                    <td>&lt; 0.5% @ 1kHz</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Impedance</strong></td>
+                                    <td class="highlight-col">32 Ohms (Easy Drive)</td>
+                                    <td>16 Ohms</td>
+                                    <td>32 &mdash; 64 Ohms</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Wireless Codecs</strong></td>
+                                    <td class="highlight-col">LDAC, aptX Adaptive, AAC, SBC</td>
+                                    <td>Wired Lossless (Zero Latency)</td>
+                                    <td>SBC, AAC only</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Battery / Fast Charge</strong></td>
+                                    <td class="highlight-col">40 Hours (15m = 8h)</td>
+                                    <td>Passive (No Battery Needed)</td>
+                                    <td>24 Hours</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Weight & Materials</strong></td>
+                                    <td class="highlight-col">240g CNC Aluminum & Memory Foam</td>
+                                    <td>18g Acoustic Resin</td>
+                                    <td>290g Plastic composite</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Lookbook / Minimalist Gallery -->
+        <section id="lookbook" class="lookbook-section">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="section-eyebrow">VISUAL LOOKBOOK</span>
+                    <h2 class="section-title">THE MINIMALIST AESTHETIC</h2>
+                    <p class="section-desc">Designed to complement high-focus studio setups, clean architecture, and modern workspaces.</p>
+                </div>
+
+                <div class="lookbook-grid">
+                    <div class="lookbook-item large" data-src="img/lookbook-lifestyle.jpg">
+                        <img src="img/lookbook-lifestyle.jpg" alt="Minimalist Workspace with PHONO Stand">
+                        <div class="lookbook-overlay">
+                            <span class="lookbook-tag">Studio Desk Setup</span>
+                            <span class="zoom-indicator">⊕ Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-src="img/headphone-black.jpg">
+                        <img src="img/headphone-black.jpg" alt="PHONO Obsidian Black Angle">
+                        <div class="lookbook-overlay">
+                            <span class="lookbook-tag">Obsidian Finish</span>
+                            <span class="zoom-indicator">⊕ Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-src="img/headphone-white.jpg">
+                        <img src="img/headphone-white.jpg" alt="PHONO Glacier White Details">
+                        <div class="lookbook-overlay">
+                            <span class="lookbook-tag">Glacier Aluminum</span>
+                            <span class="zoom-indicator">⊕ Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-src="img/headphone-silver.jpg">
+                        <img src="img/headphone-silver.jpg" alt="PHONO Stealth Titanium Detail">
+                        <div class="lookbook-overlay">
+                            <span class="lookbook-tag">Titanium Gimbal</span>
+                            <span class="zoom-indicator">⊕ Click to Expand</span>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-src="img/headphone-iem.jpg">
+                        <img src="img/headphone-iem.jpg" alt="PHONO IEM Macro Details">
+                        <div class="lookbook-overlay">
+                            <span class="lookbook-tag">Resin Acoustic Shell</span>
+                            <span class="zoom-indicator">⊕ Click to Expand</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews & Testimonials -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="reviews-header-row">
+                    <div>
+                        <span class="section-eyebrow">COMMUNITY & PRODUCERS</span>
+                        <h2 class="section-title">WHAT AUDIOPHILES SAY</h2>
+                    </div>
+                    <button class="btn btn-secondary" id="writeReviewBtn">
+                        <span>Write a Review</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </button>
+                </div>
+
+                <div class="reviews-grid" id="reviewsContainer">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"The frequency response is shockingly flat. As a mix engineer, I can work for 6 hours straight without ear fatigue. The Beryllium driver speed is world class."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">MK</div>
+                            <div>
+                                <h4 class="reviewer-name">Marcus Vance <span class="verified-tag">✓ Verified Buyer</span></h4>
+                                <span class="reviewer-role">Mixing & Mastering Engineer, Berlin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"The minimalist black and white aesthetic looks incredible on my desk, but the sound quality is what actually blew me away. LDAC wireless bitrate is pure magic."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">SL</div>
+                            <div>
+                                <h4 class="reviewer-name">Sarah Lin <span class="verified-tag">✓ Verified Buyer</span></h4>
+                                <span class="reviewer-role">Sound Designer & Architect, Tokyo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Crafted with genuine attention to acoustic engineering. Aarav's design philosophy on this project sets a new benchmark for clean hardware."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">DR</div>
+                            <div>
+                                <h4 class="reviewer-name">David Ross <span class="verified-tag">✓ Verified Buyer</span></h4>
+                                <span class="reviewer-role">Audiophile & Hardware Reviewer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Join Collective Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <span class="section-eyebrow">STAY TUNED</span>
+                        <h2 class="newsletter-title">JOIN THE AUDIO COLLECTIVE</h2>
+                        <p class="newsletter-desc">Receive exclusive studio drops, firmware calibrations, and 10% off your first hardware order.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                        <p class="newsletter-note">We respect your privacy. No spam &bull; Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="brand-logo footer-logo">
+                    <span class="logo-mark"></span>
+                    <span class="brand-name">PHONO</span>
+                </div>
+                <p class="footer-about">
+                    High-precision minimalist audio hardware engineered for audiophiles, producers, and minimalists. Built with clean HTML, modern CSS, and vanilla JavaScript.
+                </p>
+                <p class="footer-author-credit">
+                    Designed &amp; Coded with obsession by <strong>Aarav</strong> (<a href="https://github.com/Aarav1107" target="_blank" rel="noopener noreferrer">@Aarav1107</a>).
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Hardware</h4>
+                <ul class="footer-links">
+                    <li><a href="#showcase">PHONO Pro Wireless</a></li>
+                    <li><a href="#customizer">Titanium Series</a></li>
+                    <li><a href="#catalog">Pure Dual IEMs</a></li>
+                    <li><a href="#catalog">Machined Desk Stand</a></li>
+                    <li><a href="#catalog">Balanced OFC Cables</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Acoustics</h4>
+                <ul class="footer-links">
+                    <li><a href="#acoustics">Sound Lab Simulator</a></li>
+                    <li><a href="#specs">Frequency Curves</a></li>
+                    <li><a href="#specs">Beryllium Transducers</a></li>
+                    <li><a href="#specs">LDAC Wireless Codecs</a></li>
+                    <li><a href="#reviews">Mastering Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Project & Source</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/Aarav1107/headphone-shopping-site" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                    <li><a href="https://github.com/solygambas/html-css-javascript-projects" target="_blank" rel="noopener noreferrer">100+ Projects (095)</a></li>
+                    <li><a href="https://github.com/Aarav1107" target="_blank" rel="noopener noreferrer">Aarav's GitHub Profile</a></li>
+                    <li><a href="#specs">Open Technical Specs</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom-bar">
+            <p>&copy; <span id="currentYear">2026</span> PHONO Studio &bull; Developed by Aarav. All rights reserved.</p>
+            <div class="footer-badges">
+                <span class="mono-badge">HTML5</span>
+                <span class="mono-badge">VANILLA CSS3</span>
+                <span class="mono-badge">MODULAR JS</span>
+                <span class="mono-badge">NO DEPENDENCIES</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT CART DRAWER -->
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+        <div class="cart-header">
+            <div class="cart-header-title">
+                <h3>Shopping Bag</h3>
+                <span class="cart-count-text" id="cartItemsCountText">(0 items)</span>
+            </div>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="Close Shopping Bag">&times;</button>
+        </div>
+
+        <!-- Free Shipping Progress Bar -->
+        <div class="shipping-progress-box">
+            <div class="shipping-text" id="shippingProgressText">Add $100.00 more for Free Worldwide Express Shipping</div>
+            <div class="progress-track">
+                <div class="progress-bar" id="shippingProgressBar" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div class="cart-items-container" id="cartItemsList">
+            <!-- Empty state injected if cart is empty -->
+            <div class="cart-empty-state" id="cartEmptyState">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <h4>Your bag is empty</h4>
+                <p>Add a pair of PHONO studio headphones to begin your pure sound experience.</p>
+                <button class="btn btn-secondary btn-sm" id="emptyCartShopBtn">Explore Collection</button>
+            </div>
+        </div>
+
+        <!-- Cart Footer / Checkout Controls -->
+        <div class="cart-footer" id="cartFooter">
+            <!-- Promo Code Accordion -->
+            <div class="promo-box">
+                <div class="promo-input-group">
+                    <input type="text" id="promoCodeInput" placeholder="Promo code (try AARAV10)" autocomplete="off">
+                    <button class="btn btn-promo" id="applyPromoBtn">Apply</button>
+                </div>
+                <div class="promo-feedback" id="promoFeedback"></div>
+            </div>
+
+            <!-- Cart Price Breakdown -->
+            <div class="cart-breakdown">
+                <div class="breakdown-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="breakdown-row discount-row" id="discountRow" style="display: none;">
+                    <span>Discount (<span id="discountName">10%</span>):</span>
+                    <span id="cartDiscount">-$0.00</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Worldwide Shipping:</span>
+                    <span id="cartShipping">FREE</span>
+                </div>
+                <div class="breakdown-row total-row">
+                    <span>Total:</span>
+                    <span id="cartGrandTotal">$0.00</span>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block checkout-btn" id="proceedCheckoutBtn">
+                <span>Proceed to Checkout</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+    </aside>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-card checkout-modal-card">
+            <button class="modal-close-btn" id="closeCheckoutModal">&times;</button>
+            
+            <div id="checkoutStepForm">
+                <div class="modal-header">
+                    <span class="section-eyebrow">FAST CHECKOUT</span>
+                    <h3 class="modal-title">STUDIO DIRECT ORDER</h3>
+                    <p class="modal-subtitle">Complete your details to place your custom audio order.</p>
+                </div>
+
+                <form class="checkout-form" id="checkoutForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="custFirstName">First Name *</label>
+                            <input type="text" id="custFirstName" required placeholder="Aarav">
+                        </div>
+                        <div class="form-group">
+                            <label for="custLastName">Last Name *</label>
+                            <input type="text" id="custLastName" required placeholder="Kashyap">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="custEmail">Email Address *</label>
+                        <input type="email" id="custEmail" required placeholder="aaravkashyap117@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="custAddress">Shipping Address *</label>
+                        <input type="text" id="custAddress" required placeholder="123 Studio Boulevard, Suite 4B">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="custCity">City *</label>
+                            <input type="text" id="custCity" required placeholder="New Delhi">
+                        </div>
+                        <div class="form-group">
+                            <label for="custPostal">Postal Code *</label>
+                            <input type="text" id="custPostal" required placeholder="110001">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <label class="payment-radio">
+                                <input type="radio" name="paymentMethod" value="card" checked>
+                                <span class="radio-mark"></span>
+                                <span>Credit / Debit Card (Mock)</span>
+                            </label>
+                            <label class="payment-radio">
+                                <input type="radio" name="paymentMethod" value="upi">
+                                <span class="radio-mark"></span>
+                                <span>UPI / Instant NetBanking</span>
+                            </label>
+                            <label class="payment-radio">
+                                <input type="radio" name="paymentMethod" value="applepay">
+                                <span class="radio-mark"></span>
+                                <span>Apple Pay / Google Pay</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="order-summary-box">
+                        <div class="summary-item">
+                            <span>Order Total:</span>
+                            <strong id="modalOrderTotal">$299.00</strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Place Studio Order</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Order Confirmation Success State -->
+            <div id="checkoutSuccessState" class="checkout-success-state" style="display: none;">
+                <div class="success-icon-wrap">✓</div>
+                <h3 class="success-title">ORDER CONFIRMED</h3>
+                <p class="success-desc">Thank you for your order! Your PHONO studio hardware is being hand-calibrated and prepared for express shipment.</p>
+                <div class="order-id-badge">
+                    <span>Order Reference:</span>
+                    <strong id="confirmedOrderId">#PHONO-9525</strong>
+                </div>
+                <button class="btn btn-primary" id="continueShoppingBtn">Continue Browsing</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRITE A REVIEW MODAL -->
+    <div class="modal-overlay" id="reviewModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="closeReviewModal">&times;</button>
+            <div class="modal-header">
+                <span class="section-eyebrow">COMMUNITY FEEDBACK</span>
+                <h3 class="modal-title">SHARE YOUR LISTENING EXPERIENCE</h3>
+            </div>
+            <form id="reviewSubmitForm">
+                <div class="form-group">
+                    <label for="reviewAuthor">Your Name *</label>
+                    <input type="text" id="reviewAuthor" required placeholder="e.g. Alex Rivera">
+                </div>
+                <div class="form-group">
+                    <label for="reviewRole">Your Role / City</label>
+                    <input type="text" id="reviewRole" placeholder="e.g. Music Producer, London">
+                </div>
+                <div class="form-group">
+                    <label>Rating *</label>
+                    <div class="star-rating-select" id="starRatingSelect">
+                        <button type="button" class="star-btn active" data-rating="1">★</button>
+                        <button type="button" class="star-btn active" data-rating="2">★</button>
+                        <button type="button" class="star-btn active" data-rating="3">★</button>
+                        <button type="button" class="star-btn active" data-rating="4">★</button>
+                        <button type="button" class="star-btn active" data-rating="5">★</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reviewContent">Your Review *</label>
+                    <textarea id="reviewContent" rows="4" required placeholder="Describe your experience with the acoustic tuning, comfort, and build quality..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span>Submit Review</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL FOR LOOKBOOK ZOOM -->
+    <div class="lightbox-overlay" id="lightboxModal">
+        <button class="lightbox-close" id="closeLightbox">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Lookbook Expanded Image" id="lightboxImg">
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Application Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
